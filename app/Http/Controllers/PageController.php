@@ -49,8 +49,6 @@ class PageController extends Controller
             }
         }
 
-        return $csvData;
-
         $reader = new ReaderXlsx();
         $spreadsheet = $reader->load(public_path('base_template.xlsx'));
 
